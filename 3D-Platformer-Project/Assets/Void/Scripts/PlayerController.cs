@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
         Vector3 direction = (transform.forward * inputManager.vertical + transform.right * inputManager.horizontal).normalized;
         rigidBody.MovePosition(transform.position + direction * moveSpeed * Time.deltaTime);
 
+
     }
 
     private void GetObjects()
